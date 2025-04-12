@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-next",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "dbaeumer.vscode-eslint",
+    "dsznajder.es7-react-js-snippets",
+    "esbenp.prettier-vscode",
+    "infeng.vscode-react-typescript",
+    "naumovs.color-highlight",
+    "github.remotehub",
+    "ecmel.vscode-html-css",
+    "andys8.jest-snippets",
+    "pkief.material-icon-theme",
+    "prisma.prisma",
+    "streetsidesoftware.code-spell-checker",
+    "orta.vscode-jest"
+  ]
+}
