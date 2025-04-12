@@ -12,7 +12,7 @@ export class OrderService {
   constructor(
     @InjectModel(Order.name) private orderModel: Model<Order>,
     @InjectModel(OrderItem.name) private orderItemModel: Model<OrderItem>
-  ) { }
+  ) {}
 
   async create(createOrderDto: CreateOrderDto) {
     const order = new this.orderModel(createOrderDto);

@@ -7,7 +7,7 @@ import { UpdateOrderItemDto } from './dto/update-order-item.dto';
 
 @Injectable()
 export class OrderItemsService {
-  constructor(@InjectModel(OrderItem.name) private orderModel: Model<OrderItem>) { }
+  constructor(@InjectModel(OrderItem.name) private orderModel: Model<OrderItem>) {}
 
   async create(createOrderItemDto: CreateOrderItemDto) {
     const newOrderItem = new this.orderModel(createOrderItemDto);

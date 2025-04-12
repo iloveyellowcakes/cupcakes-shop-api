@@ -1,6 +1,8 @@
 import { MiddlewareConsumer, Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 
+import { ConfigModule } from '@nestjs/config';
+import { AuthModule } from './auth/auth.module';
 import { FlavorsModule } from './flavors/flavors.module';
 import { OrderItemsModule } from './order-items/order-items.module';
 import { OrderModule } from './order/order.module';
@@ -10,6 +12,7 @@ import { ValidateIdMiddleware } from './utils';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
     MongooseModule.forRoot(
       'mongodb+srv://root:root@cluster0.ljmhhyv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
     ),
@@ -18,6 +21,7 @@ import { ValidateIdMiddleware } from './utils';
     FlavorsModule,
     OrderItemsModule,
     OrderModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],
